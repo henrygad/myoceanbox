@@ -1,0 +1,43 @@
+.about_us_container{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    border: 0;
+    border-top: 1px solid black;
+}
+.about_us_container .title,
+.about_us_container .content{
+    height: auto;
+    width: 58%;
+    margin: 0 auto;
+}
+.about_us_container .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.about_us_container .title h1{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 42px;
+    color: rgb(68, 68, 68);
+}
+.about_us_container .content{
+    padding-top: 0px;
+    padding-bottom: 1px;
+}
+.about_us_container .content p,
+.about_us_container .content span{
+    font-family: 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", Arial, "Noto Sans";
+    font-weight: rgb(33, 37, 41);
+    line-height: 25px;
+}
+.about_us_container .content p{
+    padding-top: 16px;
+    padding-right: 186px;
+    padding-left: 186px;
+}

@@ -1,0 +1,52 @@
+@import url('/css/contactform.css');
+
+.contact_us_container{
+    width: 100%;
+    padding-bottom: 0;
+    border: 0;
+    border-top: 1px solid black;
+}
+.contact_us_container .title,
+.contact_us_container .content{
+    height: auto;
+    width: 66.5%;
+    margin: 0 auto;
+}
+.contact_us_container .title{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+.contact_us_container .title h1{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 42px;
+    color: rgb(68, 68, 68);
+}
+.contact_us_container .content{
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+.contact_us_container .content address{
+    padding-top: 15px;
+    font-family: 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", Arial, "Noto Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgb(33, 37, 41);
+}
+.contact_us_container .content address span{
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: rgb(33, 37, 41);
+}
+.contact_us_container .form_container{
+    margin-top: 5px;
+    padding-bottom: 0;
+    height: auto;
+    min-height: 410px;
+}

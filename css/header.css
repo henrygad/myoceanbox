@@ -1,0 +1,164 @@
+.black_space{
+    background-color: #000;
+    height: 22px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.main_nav{
+    height: 63px;
+    background-color:rgba(249, 249, 249, 1);
+}
+.main_nav_container{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    padding-left: 30px;
+    grid-gap: 14px;
+}
+.main_nav_container .list_container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    grid-gap: 10px;
+  
+}
+.main_nav_container .list_container li{
+    padding: 2px 2px;
+}
+.main_nav_container .list_container li a{
+    text-transform: capitalize;
+    font-family: 'Roboto';
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .6);
+}
+header .phone_number{
+    padding-top: 21px;
+
+}
+header .phone_number p{
+    font-family: 'Montserrat', Arial, Helvetica;
+    font-size: 12.5px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 0.35px;
+    text-decoration: solid;
+    line-height: 14px;
+    color: rgba(0, 0, 0, .7);
+}
+header .logo_container{
+    height: 125px;
+    background-color: #fff;  
+}
+header .logo_container a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+}
+header .logo_container img{
+    width: 200px;
+    height: 100px;
+    color: rgb(9, 7, 7);
+}
+.second_nav{
+    position: relative;
+    height: 50px;
+}
+.second_nav .list_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+}
+.second_nav .list_container .list{
+    flex: 1 0 1;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 50px;
+}
+.second_nav .list_container .list  div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    padding: 10px 10px;
+}
+.second_nav .list_container .list .drop {
+    background-color: rgb(229, 229, 229);
+}
+.second_nav .list_container .list a,
+.second_nav .list_container .list  div:nth-child(1) > a{
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(16, 15, 15);
+    text-transform: uppercase;
+}
+
+.second_nav .list_container .list div:nth-child(1) > a:hover{
+    text-decoration: underline;
+}
+.second_nav .list_container .list  div:nth-child(1) > p{
+   font-size: 'Roboto';
+   font-size: 14px;
+   font-weight: 600;
+   rotate: 90deg;
+   color: rgba(0, 0, 0, .9);
+}
+.drop_list{
+    display: none;
+}
+.second_nav .list_container .list.one .drop ~ .drop_list,
+.second_nav .list_container .list.two .drop ~ .drop_list,
+.second_nav .list_container .list.three .drop ~ .drop_list,
+.second_nav .list_container .list.four .drop ~ .drop_list,
+.second_nav .list_container .list.five .drop ~ .drop_list,
+.second_nav .list_container .list.six .drop ~ .drop_list,
+.second_nav .list_container .list.seven .drop ~ .drop_list{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -348%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 120px;
+    background-color: rgb(229, 229, 229);
+    display: block;
+    z-index: 100;
+}
+.drop_list ul{
+    width: 60%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+}
+.drop_list ul li{
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    list-style: none;
+    padding-bottom: 20px;
+    border: 0;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+.drop_list ul li a{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22.5px;
+    color: rgb(14, 14, 14);
+    text-transform: capitalize;
+}
+
+
+

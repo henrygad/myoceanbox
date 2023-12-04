@@ -1,0 +1,162 @@
+@import url('singleproductslider.css');
+
+.single_product_container{
+    width: 100%;
+    padding-bottom: 0;
+    border: 0;
+    border-top: 1px solid black;
+}
+.single_product_container .content,
+.single_product_container .slider_container,
+.single_product_container .description_table_container{
+    height: auto;
+    min-height: 10px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.single_product_container .content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.single_product_container .content > .first,
+.single_product_container .content > .second{
+    flex: 1 0 400px;
+     height: 480px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+}
+.single_product_container .content > .first .img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.single_product_container .content > .first .img img{
+    height: 73%;
+    object-fit: cover;
+    transform-origin: bottom;
+    transform-style: flat;
+    transform: scale(100%);
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    cursor: pointer;
+}
+.single_product_container .content > .first .img img:hover{
+    transform-origin: bottom;
+    transform-style: flat;
+    transform: scale(140%);
+}
+.single_product_container .content > .second .text{
+    height: 75%;
+}
+.single_product_container .content > .second .text .title{
+    width: 100%;
+}
+.single_product_container .content > .second .text .title h2{
+    color: rgb(68, 68, 68);
+    font-family: 'Montserrat', Arial, Helvetica ;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: .25px;
+    line-height: 33.6px;
+}
+.single_product_container .content > .second .text .was_now{
+    width: 100%;
+    margin-top: 8px;
+    color: rgb(33, 37, 41);
+    font-family: "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 37,5px;
+    text-align: left;
+}
+.single_product_container .content > .second .text .was_now .stroke{
+    text-decoration: line-through;
+}
+.single_product_container .content > .second .text .condition_weight{
+    margin-top: 8px
+}
+.single_product_container .content > .second .text .condition_weight p{
+    font-family: 'Montserrat', Arial, Helvetica;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    align-items: left;
+    color: rgb(33, 37, 41);
+
+    margin-top: 20px;
+}
+.single_product_container .content > .second .text .condition_weight p span{
+    display: block;
+    font-family: 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 37.5px;
+    align-items: left;
+
+    width: 100%;
+    margin-top: 5px;
+}
+.single_product_container .content > .second .add_to_cart{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    margin-top: 1px;
+    border: 0;
+    border-top: 1.5px solid rgb(33, 37, 41);
+}
+
+
+/* zipcode  css*/
+.single_product_container .zipcode{
+    width: 170px;
+    font-family: 'BlinkMacSystemFont', "Segoe UI", 'Roboto';
+    font-size: 14px;
+    color:rgb(33, 37, 41) ;
+    padding: 4px 4px;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 1px;
+}
+.single_product_container .zipcode:focus{
+    outline: none;
+}
+/* end of zipcode css */
+
+.single_product_container .add_to_cart_btn{
+    width: 110px;
+    padding: 12px 0px;
+    margin-left: 5px;
+    font-family: 'BlinkMacSystemFont', "Segoe UI", 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    background-color: #0b0b0b;
+    border: 0;
+    border-radius: 1px;
+}
+.single_product_container .add_to_cart_btn:active{
+    background-color: rgb(0, 123, 255);
+    border: 1.5px solid #0b0b0b;
+    border-radius: 4px;
+}
+.single_product_container .add_to_cart_btn:hover{
+    background-color: rgb(0, 123, 255);
+    border-radius: 4px;
+}
+
+/* single product page image slider */
+.single_product_container .slider_container{
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+.single_product_container .slider_container > div{
+    height: 150px;
+    width: 600px;
+}

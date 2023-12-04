@@ -1,0 +1,60 @@
+.shipping_return_container{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    border: 0;
+    border-top: 1px solid black;
+}
+.shipping_return_container .title,
+.shipping_return_container .content{
+    height: auto;
+    width: 38.5%;
+    margin: 0 auto;
+}
+.shipping_return_container .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.shipping_return_container .title h1{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 42px;
+    color: rgb(68, 68, 68);
+}
+.shipping_return_container .content{
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+.shipping_return_container .content > div{
+    margin-top: 15px;
+}
+.shipping_return_container .content > div > p:nth-child(1){
+    margin-bottom: 16px;
+}
+.shipping_return_container .content > div div{
+    margin-top: 15px;
+}
+.shipping_return_container .content .site_delivery p{
+    margin-top: 10px;
+}
+.shipping_return_container .content div p{
+    font-family: 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue";
+    font-size: 16px;
+    color: rgb(33, 37, 41);
+    line-height: 25px;
+}
+.shipping_return_container .content div >span{
+    font-family: arial, helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgb(33, 37, 41);
+    text-align: left;
+}
+.shipping_return_container .content > div ul li{
+    list-style:disc;
+}

@@ -1,0 +1,53 @@
+.sub_form{
+    width: 100%;
+    height: 95%;
+}
+.sub_form .form_field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+.sub_form .form_field label{
+    display: none;
+}
+.sub_form .form_field .wrap{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-gap: 13px;
+    width: 100%;
+    height: inherit;
+}
+.sub_form .form_field .wrap input:nth-child(1){
+    flex: 1.4;
+    padding: 11px 15px;
+    font-family: 'BlinkMacSystemFont', "Segoe UI", 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(14, 14, 14);
+    background-color: #fff;
+    border: 1px solid rgba(102, 102, 102 , .6);
+    border-radius: 4px;
+}
+.sub_form .form_field .wrap input:nth-child(1)::placeholder{
+    opacity: .9;
+}
+.sub_form .form_field .wrap input:nth-child(1):focus{
+    outline: none;
+}
+.sub_form .form_field .wrap input:nth-child(2){
+    flex: 1;
+    padding: 11px 0;
+    font-family: 'BlinkMacSystemFont', "Segoe UI", 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    background-color: rgb(70, 70, 70);
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 4px;
+}
+#success_message{
+    display: none;
+}

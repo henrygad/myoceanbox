@@ -1,0 +1,68 @@
+*, ::after,
+::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family:  'Source Sans Pro';
+}
+:root{
+    ---primary-color: #000;
+}
+body{
+    scroll-behavior: smooth;
+    height: auto;
+    width: auto;
+}
+header, 
+nav,
+ main,
+ main section,
+ footer,
+ footer section{
+    width: 100%;
+}
+header{
+
+}
+nav{
+
+}
+main{
+
+}
+main section{
+
+}
+footer{
+    border: 0;
+    border-top: 1px solid rgb(18, 17, 17);
+    background-color: rgb(224, 238, 241);
+}
+footer section{
+
+}
+
+.hero_container{
+    height: 600px;
+    max-height: 71.42857rem;
+}
+
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}

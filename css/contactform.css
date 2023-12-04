@@ -1,0 +1,68 @@
+.contact_form{
+    width: 100%;
+    height: 100%;
+}
+.contact_form .form_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    height: inherit;
+    width: inherit;
+}
+.contact_form .form_grid > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_form .form_grid label,
+.contact_form .form_grid input,
+.contact_form .form_grid textarea{
+    font-family: 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    
+}
+
+.contact_form .form_grid > div label{
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact_form .form_grid > div input{
+    padding: 8px 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+}
+.contact_form .form_grid > div textarea{
+    padding: 15px 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+}
+.contact_form .form_grid > div input:focus,
+.contact_form .form_grid > div textarea:focus{
+    outline: none;
+}
+.contact_form .form_grid .form_ms{
+    grid-area: 3/ 1/ span 3/ span 2 ;
+
+}
+.contact_form .form_btn{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.contact_form .form_btn input{
+    padding: 11px 38px;
+    font-family: 'Montserra't, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .7);
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 4px;
+}
