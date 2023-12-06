@@ -84,3 +84,99 @@ footer .note_container p{
     font-weight: 400px;
     line-height: 21px;
 }
+
+ /* responsive design for minimal of  801.99 screem view point */
+ @media (min-width: 801.99px) and (max-width: 1640px){
+    .footer_container_info{
+        flex-wrap: wrap;
+        grid-gap: 5px;
+        width: 90%;
+        padding-bottom: 70px;
+    }
+    .footer_container_info .group{
+        display: flex;
+        flex-direction: column;
+        grid-column-gap: 18px;
+        height: auto;
+    }
+
+    .footer_container_info article:nth-child(1){
+        width: 10%;
+   }
+   .footer_container_info article:nth-child(2){
+        width: 20%;
+   }
+   .footer_container_info article:nth-child(3){
+        width: 40%;
+   }
+   .footer_container_info article:nth-child(4){
+           width: 25%;
+           padding-left: 0px;   
+           align-content: end;
+        }
+
+
+}
+
+/* responsive design for 801 screem view point */
+@media (max-width: 801px) {
+    .footer_container_info{
+        flex-wrap: wrap;
+        grid-gap: 40px;
+        width: 90%;
+        padding-bottom: 70px;
+    }
+    .footer_container_info .group{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px;
+        height: auto;
+        min-width: 200px;
+        
+    }
+
+    .footer_container_info article:nth-child(1){
+        width: 40%;
+   }
+   .footer_container_info article:nth-child(2){
+        width: 40%;
+   }
+   .footer_container_info article:nth-child(3){
+        width: 40%;
+   }
+   .footer_container_info article:nth-child(4){
+           width: 40%;
+           padding-left: 0px;   
+        }
+
+}
+/* responsive design for a screen size of 550  view piont*/
+@media (max-width: 550px) {
+    .footer_container_info .group{
+
+        text-align: center;
+        
+    }
+    .footer_container_info article:nth-child(1){
+        width: 100%;
+   }
+   .footer_container_info article:nth-child(2){
+        width: 100%;
+   }
+   .footer_container_info article:nth-child(3){
+        width: 100%;
+   }
+   .footer_container_info article:nth-child(4){
+           width: 100%;
+           padding-left: 0px;
+           grid-gap: 20px;
+   }
+
+   .footer_payment_icons{
+     width: 70%;
+     margin: 0 auto;
+     margin-top: 40px;
+}
+
+   
+}

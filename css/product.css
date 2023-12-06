@@ -115,3 +115,82 @@
    text-decoration-line: line-through;
    text-decoration-style: solid;
 }
+/* responsive design from 1999 to 1700 screem view point */
+@media (min-width: 1199.99px) and (max-width: 1700px) {
+    .products_container .products_grid{
+        width: 80%;
+    }
+    .products_grid .product{
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    .product .product_title{
+        margin-top: 60px;
+        padding: 0 10px;
+    }
+
+}
+/* responsive design from 800 to 1200 screem view point */
+@media (min-width: 800.99px) and (max-width: 1200px) {
+    .products_container .products_grid{
+        width: 95%;
+    }
+    .products_grid .product{
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    .product .product_img{
+        height: 40%;
+    }
+    .product .product_title{
+        margin-top: 50px;
+        padding: 0 10px;
+    }
+
+}
+/* responsive design for 801 screem view point */
+@media (max-width: 801px) {
+    .products_container .products_grid{
+        width: 85%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+    }
+    .products_grid .product{
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    .product .product_img{
+        height: 30%;
+    }
+    .product .product_title{
+        margin-top: 60px;
+        padding: 0 10px;
+    }
+
+}
+
+/* responsive design for a screen size of 550  view piont*/
+@media (max-width: 550px) {
+    .products_container .products_grid{
+        width: 85%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+    }
+
+}
+/* responsive design for a screen size of 480  view piont*/
+@media (max-width: 480px) {
+    .products_container .products_grid{
+        width: 75%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 30px;
+    }
+    .product .product_img{
+        height: 50%;
+    }
+
+
+}

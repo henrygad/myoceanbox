@@ -51,21 +51,32 @@ header .logo_container{
     height: 125px;
     background-color: #fff;  
 }
-header .logo_container a{
+header .logo_container div{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: inherit;
+
 }
+
+/* header .logo_container a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+} */
 header .logo_container img{
     width: 200px;
     height: 100px;
     color: rgb(9, 7, 7);
 }
+
 .second_nav{
     position: relative;
-    height: 50px;
+    height: auto;
+    padding: 5px 5px;
 }
 .second_nav .list_container{
     display: flex;
@@ -76,6 +87,7 @@ header .logo_container img{
     height: inherit;
 }
 .second_nav .list_container .list{
+
     flex: 1 0 1;
     display: flex;
     flex-direction: column;
@@ -121,9 +133,9 @@ header .logo_container img{
 .second_nav .list_container .list.six .drop ~ .drop_list,
 .second_nav .list_container .list.seven .drop ~ .drop_list{
     position: absolute;
+    top: 100px;
     right: 0;
     left: 0;
-    bottom: -348%;
     transform: translateY(-50%);
     width: 100%;
     height: 120px;
@@ -158,6 +170,158 @@ header .logo_container img{
     line-height: 22.5px;
     color: rgb(14, 14, 14);
     text-transform: capitalize;
+}
+
+.hamburger{
+    display: none;
+}
+
+
+
+/* responsive design for 801 screem view point */
+@media (max-width: 801px) {
+
+    .hamburger{
+        position: absolute;
+        top: 6px;
+        left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        width: 45px;
+        border: 1px solid rgb(210, 210, 210);
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+   
+    .hamburger .wrap {
+        height: 50%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hamburger .wrap span{
+        height: 19%;
+        width: 100%;
+        background-color: rgb(126, 125, 125);
+    }
+   
+
+
+    #header_fix{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: auto;
+        min-height: 52px;
+        border-bottom: 1px solid black;
+        background-color: #fff;
+        z-index: 20;
+    }
+    
+    header .logo_container{
+        height: auto;
+        min-height: 60px;
+        padding-top: 5px;
+    }
+    header .logo_container img{
+        width: 100px;
+        height: 50px;
+        color: rgb(9, 7, 7);
+    }
+
+    .hamburger.two{
+        border: 0;
+    }
+    .hamburger.two:active{
+        border: none;
+    }
+    .hamburger.two .wrap{
+        width: 50%;
+    }
+
+
+    .second_nav{
+        display: none;
+        height: auto;
+    }
+
+    .hamburger.two.drop_nav ~ .second_nav{
+        display: flex;
+        position: fixed;
+        top: 52px;
+        width: 100%;
+        bottom: 0;
+        background-color: rgb(225, 235, 237);;
+    }
+    .second_nav .list_container{
+        flex-direction: column;
+        align-items: start;
+        width: 95%;
+        height: 40%;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding-top: 10px;
+        border-top: 1px solid black;
+    }
+    .second_nav .list_container .list  div:nth-child(1){
+        padding: 0;
+    }
+    .second_nav .list_container .list  div:nth-child(1) > p{
+        rotate: 0deg;
+     }
+
+
+     
+
+    .black_space{
+        margin-top: 61px;
+    }
+    
+    .main_nav{
+        position: relative;
+        height: auto;
+        min-height: 50px;
+    }
+    .hamburger.one:active{
+        border: 2px solid rgb(14, 14, 14);
+    }
+   
+    .main_nav_container{
+        display: none;
+    }
+
+    .hamburger.one.drop_nav ~ .main_nav_container{
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        margin-top: 50px;
+        animation: dropdownav1 .25s ease 1 forwards;
+    }
+    @keyframes dropdownav1 {
+        0%{
+            height: 0;
+        }100%{
+            height: 250px;
+        }
+        
+    }
+    .main_nav_container .list_container{
+        width: 100%;
+        height: 70%;
+       
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+    }
+    .main_nav_container .phone_number{
+        height: 30%;
+        width: 100%;
+        padding-top: 30px;
+    }
 }
 
 

@@ -66,3 +66,21 @@
     border: 1px solid rgb(102, 102, 102);
     border-radius: 4px;
 }
+
+/* responsive design for 700px to 0px screem view point */
+@media (min-width: 0px) and (max-width: 420px) {
+    .contact_form .form_grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+        height: inherit;
+        width: inherit;
+    }
+    .contact_form .form_grid .form_ms{
+        grid-area: 5/ 1/ span 3/ span 1 ;
+    
+    }
+
+   
+}

@@ -64,8 +64,15 @@
     transition: all .25s ease;
 }
 .single_product_slider .slides .slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 30%;
     height: 100%;
     border: 1px solid black;
+
+}
+.single_product_slider .slides .slide img{
+    height: 60%;
 
 }

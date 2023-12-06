@@ -41,3 +41,28 @@
     padding-right: 186px;
     padding-left: 186px;
 }
+
+/* responsive design from 1500 to 800px screem view point */
+@media (min-width: 800px) and (max-width: 1500px) {
+    .about_us_container .title,
+.about_us_container .content{
+    width: 70%;
+}
+.about_us_container .content p{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+   
+}
+/* responsive design for 700px to 0px screem view point */
+@media (min-width: 0px) and (max-width: 799.9px) {
+    .about_us_container .title,
+.about_us_container .content{
+    width: 90%;
+}
+.about_us_container .content p{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+   
+}

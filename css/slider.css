@@ -8,7 +8,6 @@
     position: relative;
     left: 0;
     display: flex;
-    background-color: gray;
     width: 600%;
     height: 100%;
     transition: all .4s ease;
@@ -80,10 +79,10 @@
     z-index: 10;
 }
 .hero_slider .slider_nav.next{
-    right: 1%;
+    right: 1.5%;
 }
 .hero_slider .slider_nav.Previous{
-    left: 1%;
+    left: 1.5%;
 }
 .hero_slider .slider_nav img{
     height: 60%;
@@ -155,4 +154,29 @@
         left: -500%;
     }
     
+}
+
+/* responsive design for 801 screem view point */
+@media (max-width: 801px) {
+    .hero_slider .slides .slide .slide_img{
+        height: 50%;
+        width: 100%;
+    }
+    .hero_slider .slides .slide .slide_content{
+        top: none;
+        bottom: o;
+        transform: translatex(-50%);
+        width: 100%;
+        max-width: none;
+     }
+     .hero_slider .slider_nav{
+        top: 35%;
+    }
+    .hero_slider .slides .slide .slide_content h1{
+        font-size: 25px;
+    }
+    .hero_slider .slides .slide .slide_content p{
+        font-size: 14px;
+    }
+
 }

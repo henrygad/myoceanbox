@@ -58,3 +58,24 @@
 .shipping_return_container .content > div ul li{
     list-style:disc;
 }
+
+
+/* responsive design from 1500 to 800px screem view point */
+@media (min-width: 800px) and (max-width: 1500px) {
+    .shipping_return_container .title,
+.shipping_return_container .content{
+    width: 70%;
+}
+
+   
+}
+/* responsive design for 700px to 0px screem view point */
+@media (min-width: 0px) and (max-width: 799.9px) {
+    .shipping_return_container .title,
+    .shipping_return_container .content{
+        width: 90%;
+    }
+ 
+
+   
+}

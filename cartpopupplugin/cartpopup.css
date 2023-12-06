@@ -7,16 +7,6 @@
 body{
     position: relative;
 }
-
-.body {
-    -ms-overflow-style: none;  
-     scrollbar-width: none;  
-     overflow-y: scroll;
- }
- 
- .body::-webkit-scrollbar {
-     display: none;  
- }
           
 .cart_pop_up_plugin_container{
     display: none;

@@ -50,3 +50,22 @@
     height: auto;
     min-height: 410px;
 }
+
+/* responsive design from 1500 to 800px screem view point */
+@media (min-width: 800px) and (max-width: 1500px) {
+    .contact_us_container .title,
+.contact_us_container .content{
+    width: 90%;
+}
+
+   
+}
+/* responsive design for 700px to 0px screem view point */
+@media (min-width: 0px) and (max-width: 799.9px) {
+    .contact_us_container .title,
+    .contact_us_container .content{
+        width: 90%;
+    }
+
+   
+}

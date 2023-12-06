@@ -29,7 +29,12 @@ nav,
     width: 100%;
 }
 header{
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+}
+header > div{
+    width: 100%;
 }
 nav{
 
@@ -65,4 +70,40 @@ a{
 }
 button{
     cursor: pointer;
+}
+
+.body {
+    -ms-overflow-style: none;  
+     scrollbar-width: none;  
+     overflow-y: scroll;
+ }
+ 
+ .body::-webkit-scrollbar {
+     display: none;  
+ }
+
+
+/* responsive design for 801 screem view point */
+@media (max-width: 801px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+    }
+    .hero_container{
+        height: 560px;
+        max-height: 71.42857rem;
+    }
+   
+}
+
+
+/* responsive design for a screen size of 550  view piont*/
+@media (max-width: 550px) {
+
+    .hero_container{
+        height: 460px;
+        max-height: 71.42857rem;
+    }
+    
 }
