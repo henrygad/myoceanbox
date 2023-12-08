@@ -19,6 +19,7 @@ body{
     scroll-behavior: smooth;
     height: auto;
     width: auto;
+    overflow-x: hidden;
 }
 header, 
 nav,

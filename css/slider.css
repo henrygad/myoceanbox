@@ -10,7 +10,6 @@
     display: flex;
     width: 600%;
     height: 100%;
-    transition: all .4s ease;
     /* animation: slideleft 30s linear infinite; */
 }
 .hero_slider .slides .slide{
@@ -83,6 +82,7 @@
 }
 .hero_slider .slider_nav.Previous{
     left: 1.5%;
+    display: none;
 }
 .hero_slider .slider_nav img{
     height: 60%;

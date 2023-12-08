@@ -5,7 +5,6 @@ const mainnav_el = document.querySelector('.js-main-nav')
 //const secondnav_el = document.querySelector('.js-second-nav')
 const hamburger_el = document.querySelectorAll('.hamburger-js')
 const navdropdown_el = document.querySelectorAll('.js-dropdown-nav')
-console.log(mainnav_el)
 
 
 /* drop down nav function */

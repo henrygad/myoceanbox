@@ -21,7 +21,6 @@ ul .drop_list{
 .js-dropdown-nav:hover ~  .drop_list{
     position: absolute;
     display: flex;
-    background-color: red;
 }
 
 
