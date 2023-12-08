@@ -10,7 +10,7 @@
     background-color:rgba(249, 249, 249, 1);
 }
 .main_nav_container{
-    width: 100%;
+    width: 101%;
     height: inherit;
     display: flex;
     padding-left: 30px;
@@ -59,40 +59,37 @@ header .logo_container div{
     height: inherit;
 
 }
-
-/* header .logo_container a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: inherit;
-} */
 header .logo_container img{
     width: 200px;
     height: 100px;
     color: rgb(9, 7, 7);
 }
 
+
+
+
+
 .second_nav{
-    position: relative;
     height: auto;
-    padding: 5px 5px;
+    padding: 10px 5px;
 }
 .second_nav .list_container{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: inherit;
+    height: auto;
 }
 .second_nav .list_container .list{
-
     flex: 1 0 1;
     display: flex;
     flex-direction: column;
     grid-gap: 50px;
+    height: auto;
 }
+
 .second_nav .list_container .list  div:nth-child(1){
     display: flex;
     justify-content: center;
@@ -125,6 +122,7 @@ header .logo_container img{
 .drop_list{
     display: none;
 }
+
 .second_nav .list_container .list.one .drop ~ .drop_list,
 .second_nav .list_container .list.two .drop ~ .drop_list,
 .second_nav .list_container .list.three .drop ~ .drop_list,
@@ -133,21 +131,23 @@ header .logo_container img{
 .second_nav .list_container .list.six .drop ~ .drop_list,
 .second_nav .list_container .list.seven .drop ~ .drop_list{
     position: absolute;
-    top: 100px;
-    right: 0;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 120px;
+    top: 100%;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+    height: auto;
+    padding: 30px 0;
     background-color: rgb(229, 229, 229);
     display: block;
     z-index: 100;
 }
+
 .drop_list ul{
     width: 60%;
     height: inherit;
+    padding-bottom: 5px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     grid-gap: 20px;
@@ -175,6 +175,13 @@ header .logo_container img{
 .hamburger{
     display: none;
 }
+
+
+
+
+
+
+
 
 
 
@@ -244,29 +251,44 @@ header .logo_container img{
     }
 
 
+    /*  */
+
+
     .second_nav{
         display: none;
         height: auto;
     }
+    
 
     .hamburger.two.drop_nav ~ .second_nav{
         display: flex;
         position: fixed;
-        top: 52px;
+        top: 55px;
         width: 100%;
         bottom: 0;
-        background-color: rgb(225, 235, 237);;
+        background-color: rgb(225, 235, 237);
+        z-index: 200;
     }
+
+
     .second_nav .list_container{
         flex-direction: column;
         align-items: start;
-        width: 95%;
+        width: 100%;
         height: 40%;
         margin: 0 auto;
         margin-top: 40px;
         padding-top: 10px;
+        padding-left: 10px;
         border-top: 1px solid black;
     }
+
+    .second_nav .list_container .list{
+        position: relative;
+        align-items: start;
+        width: 100%;
+    }
+
     .second_nav .list_container .list  div:nth-child(1){
         padding: 0;
     }

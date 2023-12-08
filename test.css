@@ -1,0 +1,35 @@
+ul{
+    display: block;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul p{
+    rotate: 45deg;
+
+}
+
+ul .drop_list{
+    display: none;
+}
+
+.js-dropdown-nav:hover ~  .drop_list{
+    position: absolute;
+    display: flex;
+    background-color: red;
+}
+
+
+
+
+.main-navigation:not(.is_stuck) .inside-navigation {
+    position: initial;
+}
+.inside-header {
+    position: relative;
+}

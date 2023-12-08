@@ -144,3 +144,21 @@ body{
     cursor: pointer;
     transition: all .25 ease ;
 }
+
+
+/* responsive design for 801 screem view point */
+@media (max-width: 801px) {
+    .cart_pop_up_plugin_container .cart_plugin_wrap{
+        width: 400px;
+    }
+   
+}
+
+
+/* responsive design for a screen size of 550  view piont*/
+@media (max-width: 550px) {
+    .cart_pop_up_plugin_container .cart_plugin_wrap{
+        width: 300px;
+    }
+    
+}

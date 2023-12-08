@@ -1,6 +1,13 @@
 const homebody_el = document.querySelector('body')
-
+const main_el = document.querySelector('main')
+const headerfix_el = document.querySelector('.js-header-fix')
+const mainnav_el = document.querySelector('.js-main-nav')
+//const secondnav_el = document.querySelector('.js-second-nav')
+const hamburger_el = document.querySelectorAll('.hamburger-js')
 const navdropdown_el = document.querySelectorAll('.js-dropdown-nav')
+console.log(mainnav_el)
+
+
 /* drop down nav function */
 navdropdown_el.forEach( el => {
     el.addEventListener('click', e => {
@@ -12,20 +19,35 @@ navdropdown_el.forEach( el => {
 
 /* responsove nav js */
 
-const dropnav = (el) =>{
-    el.classList.toggle('drop_nav')
-}
-
-
-const hamburger_el = document.querySelectorAll('.hamburger-js')
-hamburger_el.forEach((el, index) => {
+hamburger_el.forEach((el,index) => {
     el.addEventListener('click', e => {
-        dropnav(el, index)
-        if(index === 1){
-            homebody_el.classList.toggle('body')
-        }
-
+        el.classList.toggle('drop_nav')
+        if(index === 1) homebody_el.classList.toggle('body')
     })
 })
 
+headerfix_el.addEventListener('click', e => {
+    hamburger_el.forEach((el, index) => {
+       el.classList.remove('drop_nav')
+       if(index === 1) homebody_el.classList.remove('body')
+       
+    })
+})
+mainnav_el.addEventListener('click', e => {
+    hamburger_el.forEach((el, index) => {
+        if(index === 0){
+          el.classList.remove('drop_nav')
+
+        }
+    })
+})
+
+main_el.addEventListener('click', e => {
+    hamburger_el.forEach((el, index) => {
+        if(index === 0){
+          el.classList.remove('drop_nav')
+
+        }
+    })
+})
 
