@@ -114,8 +114,7 @@ const slides_el = document.querySelector('.js-hero-slides')
 /**  display dots nav background color **/
     const dotsnavbackgroundcolor = index => {
         dotsnav_el.forEach( (el, index2) => {
-            el.classList.remove('black')
-            index2 === index? el.classList.add('black'): false            
+            index2 === index? el.classList.add('black'): el.classList.remove('black')          
 
         })  
     }
