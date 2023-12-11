@@ -7,8 +7,7 @@
     border-top: 1px solid black;
 }
 .single_product_container .content,
-.single_product_container .slider_container,
-.single_product_container .description_table_container{
+.single_product_container .slider_container{
     height: auto;
     min-height: 10px;
     width: 60%;
@@ -18,17 +17,16 @@
 .single_product_container .content{
     display: flex;
     flex-wrap: wrap;
+    grid-gap: 20px;
     align-items: center;
     margin-top: 80px;
-    margin-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .single_product_container .content > .first,
 .single_product_container .content > .second{
-    flex: 1 0 400px;
-     height: 480px;
-     padding-top: 5px;
-     padding-bottom: 5px;
+    flex: 1 0 420px;
+     height: 400px;
 }
 .single_product_container .content > .first .img{
     width: 100%;
@@ -39,10 +37,11 @@
 }
 .single_product_container .content > .first .img img{
     height: 73%;
+    width: 100%;
     object-fit: cover;
     transform-origin: bottom;
     transform-style: flat;
-    transform: scale(100%);
+   
     transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     cursor: pointer;
 }
@@ -52,7 +51,8 @@
     transform: scale(140%);
 }
 .single_product_container .content > .second .text{
-    height: 75%;
+    height: auto;
+    margin-bottom: 10px;
 }
 .single_product_container .content > .second .text .title{
     width: 100%;
@@ -108,7 +108,8 @@
     align-items: center;
     height: 25%;
     width: 100%;
-    margin-top: 1px;
+    margin-top: 10px;
+    padding-top: 10px;
     border: 0;
     border-top: 1.5px solid rgb(33, 37, 41);
 }
@@ -154,9 +155,39 @@
 /* single product page image slider */
 .single_product_container .slider_container{
     margin-top: 150px;
-    margin-bottom: 20px;
 }
 .single_product_container .slider_container > div{
     height: 150px;
     width: 600px;
+}
+
+
+
+/* responsive design for 801 screem view point */
+@media (max-width: 801px) {
+    .single_product_container .content,
+.single_product_container .slider_container{
+  
+    width: 90%;
+
+}
+.single_product_container .content{
+    margin-top: 0x;
+}
+.single_product_container .content > .first,
+.single_product_container .content > .second{
+    flex: 1 0 300px;
+}
+.single_product_container .content > .first .img img{
+    height: 63%;
+}
+.single_product_container .content > .first .img img:hover{
+    transform: scale(130%);
+}
+.single_product_container .slider_container > div{
+    height: 120px;
+    margin: 0 auto;
+    width: 90%;
+}
+   
 }

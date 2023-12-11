@@ -6,13 +6,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="/fonts/css.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="stylesheet" href="css/product.css">
-    <link rel="stylesheet" href="css//reviewslider.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/slider.css">
+
+    <link rel="stylesheet" href="../css/singleproduct.css">
+    <link rel="stylesheet" href="../css/descriptiontable.css">
     
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../cartpopupplugin/cartpopup.css">
 
 </head>
 <body>
@@ -29,9 +31,9 @@
                 </button>
                 <div class="main_nav_container js-main-nav">
                     <ul class="list_container">
-                        <li><a href="#home">home</a></li>
-                        <li><a href="about.html">about us</a></li>
-                        <li><a href="contact.html">contact us</a></li>
+                        <li><a href="../index.html">home</a></li>
+                        <li><a href=".../about.html">about us</a></li>
+                        <li><a href=".../contact.html">contact us</a></li>
                         <li><a class="js-pop">cart</a></li>
                     </ul>
                     <div class="phone_number">
@@ -43,10 +45,10 @@
         <div id="header_fix">
             <div class="logo_container js-header-fix">
                 <div>
-                    <a href="index.html"><img  class="logo" src="/images/mysteelboxlogo.png" alt="mysteelbox logo"></a>
+                    <a href="../index.html"><img  class="logo" src="../images/mysteelboxlogo.png" alt="mysteelbox logo"></a>
                </div>
             </div>
-            <button class="hamburger two hamburger-js">
+            <button class="hamburger two">
                 <div class="wrap">
                     <span></span>
                     <span></span>
@@ -66,7 +68,7 @@
                             <ul >
                                 <li>
                                 <a href="">20' New One Trip Containers</a>
-                                </li>
+                                 </li>
                                 
                                 <li>
                                 <a href="" >20' New High Cube  Containers</a>
@@ -201,151 +203,114 @@
                         </div>
                     </li>                      
                     <li class="list eight">
-                        <a href="shipping&return.html" > Shipping &amp; Returns</a>
+                        <a href="../shipping&return.html" > Shipping &amp; Returns</a>
                     </li>  
                 </ul>            
             </div>
         </div>
     </header>
     <main>
-        <section class="hero_container">
-            <div class="hero_slider">
-                <button class="slider_nav Previous js-slider-nav"><img src="images/arrowleft.svg" alt=""></button>
-                <div class="slides js-hero-slides">
-                    <div class="slide one" id="slide_one">
-                        <div class="slide_img">
-                            <img src="images/carousel/22/WWT_11.jpg?c=2" style="opacity: 1;">
-                        </div>
-                        <div class="slide_content one">
-                            <h1 class="title">AS IS</h1>
-                            <p class="description">As Is containers are sold in their current condition, which can include dents, rust, holes in the floor, and other interior irregularities or missing components. Suitable for fencing, walls, barriers, and other non-transportation applications</p>
-                        </div>
+        <section class="single_product_container">
+            <div class="content">
+                <div class="first">
+                    <div class="img">
+                        <img src="../images/500x659/products/314/8630/40HC_New_picture1__75335.1622498051.jpg?c=2" alt="">
                     </div>
-                    <div class="slide two" id="slide_two">
-                        <div class="slide_img">
-                            <img src="images/carousel/18/New_11.jpg?c=2" alt="New_11" title="" width="1690" height="730">
-                        </div>
-                        <div class="slide_content">
-                            <h1 class="heroCarousel-title">New/One Trip</h1>
-                            <p class="heroCarousel-description">Newly Manufactured One and A unit one time in transit from manufacturer to an overseas destination. These are the highest quality units available on the market</p>
-                        </div>
-                    </div>
-                    <div class="slide three" id="slide_three">
-                        <div class="slide_img">
-                            <img  src="images/carousel/19/One_Trip_11.jpg?c=2" style="opacity: 1;">
-                        </div>
-                        <div class="slide_content">
-                            <h1 class="title">CW IICL</h1>
-                            <p class="description">The quality of the unit meets the highest uniform standards and is suitable for prolonged international marine use</p>
-                        </div>
-                    </div>
-                    <div class="slide four"id="slide_four">
-                        <div class="slide_img">
-                            <img src="images/carousel/20/CW_IICL_11.jpg?c=2" style="opacity: 1;">
-                        </div>
-                        <div class="slide_content">
-                            <h1 class="title">CW</h1>
-                            <p class="description">Cargo Worthy: The unit is suitable for international marine use but initially requires physical inspection and certification by a third-party unit surveyor for ocean cargo shipping</p>
-                        </div>
-                    </div>
-                    <div class="slide five" id="slide_five">
-                        <div class="slide_img">
-                            <img  src="images/carousel/21/CW_11.jpg" style="opacity: 1;">
-                        </div>
-                        <div class="slide_content">
-                            <h1 class="title">WWT</h1>
-                            <p class="description">Wind and Water Tight: The unit may not be suitable for international marine use but is nevertheless wind and water-tight. This is the best choice for ground level storage, office, home and industrial / commercial purposes</p>
-                        </div>
-                    </div>
-                    <div class="slide one" id="slide_one">
-                        <div class="slide_img">
-                            <img src="images/carousel/22/WWT_11.jpg?c=2" style="opacity: 1;">
-                        </div>
-                        <div class="slide_content one">
-                            <h1 class="title">AS IS</h1>
-                            <p class="description">As Is containers are sold in their current condition, which can include dents, rust, holes in the floor, and other interior irregularities or missing components. Suitable for fencing, walls, barriers, and other non-transportation applications</p>
-                        </div>
-                    </div>
-                </div>    
-                <div class="dont_nav">
-                    <label class="js-dont-nav black" for="slide_one"></label>
-                    <label class="js-dont-nav" for="slide_two"></label>
-                    <label class="js-dont-nav" for="slide_three"></label>
-                    <label class="js-dont-nav" for="slide_four"></label>
-                    <label class="js-dont-nav " for="slide_five"></label>
                 </div>
-               <button class="slider_nav next js-slider-nav"><img src="images/arrowright.svg" alt=""></button>
-
+                <div class="second">
+                    <div class="text">
+                        <div class="title"> 
+                            <h2>
+                                40ft High Cube New / One Trip Shipping Container
+                            </h2>
+                        </div>
+                        <div class="was_now">
+                            <div class="was">
+                                Was: <span class="stroke">$4,500.00</span>
+                            </div>
+                            <div class="now">
+                                Now: <span>$4,100.00</span>
+                            </div>
+                        </div>
+                        <div class="condition_weight">
+                            <p class="Condition">
+                                Condition: <span>Used</span>
+                            </p>
+                            <p class="weight">
+                                Weight:  <span>8,273.00 LBS</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="add_to_cart">
+                        <input class="zipcode" type="text" placeholder="Enter Zipcode">
+                        <button class="add_to_cart_btn">Add to Cart</button>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section class="products_container">
-            <div class="title"><h2>Most Popular Products</h2></div>
-            <ul class="products_grid js-products">
-                <!-- product display here -->
-            </ul>
-        </section>
-        <section class="testimonial_container">
-            <div class="wrap">
-                <div class="title">
-                    <h2>Our Satisfied Clients</h2>
-                </div>
-                <div class="review_slider_container">
-                    <div class="review_slider">
-                        <div style="display: none;" class=" js-review-nav nav left"><img src="images/arrowleft.svg" alt=""></div>
-                            <div class="slides_wrap">
-                                <div class="slides js-review-slides">
-                                    <div class="slide one">
-                                        <img src="images/reviewslider/star.png" alt="">
-                                        <p>
-                                            "great service, bought tow containers at different times and both were delivered right when they said they would. then one trip containers are fantastic! just link brand new inside and out! great company to work with!"
-                                        </p>
-                                        <h3>KENNETH H.</h3>
-                                        <p class="from_google">Google Reviews</p>
-                                    </div>
-                                    <div class="slide two">
-                                        <img src="images/reviewslider/star.png" alt="">
-                                        <p>"Wonder experience with Myoceanbox from start to finish. The ordering and delivery process was fast and easy. Great product and great customer services!"</p>
-                                        <h3>DANIELLE J.</h3>
-                                         <p class="from_google">Google Reviews</p>
-                                    </div>
-                                    <div class="slide three">
-                                        <img src="images/reviewslider/star.png" alt="">
-                                        <p>"I received two top qualit container, they even set them on the concrete foundations i made to keep them off the ground, they brought out forklift and had them set within the hour, couldn't be happier. They communicated timming and delivery perfectly."</p>
-                                        <h3>GARLIE U.</h3>
-                                         <p class="from_google">Google Reviews</p>
-                                    </div>
-                                    <div class="slide four">
-                                        <img src="images/reviewslider/star.png" alt="">
-                                        <p>
-                                            "We used Myoceanbox on a commercial project in Fresno, CA. They were very responsive to our needs. We needed them to pick up a container quickly and they went out of thier way to be there early the next morning. Great customer services."</p>
-                                        <h3>BRIAN H.</h3>
-                                         <p class="from_google">Google Reviews</p>
-                                    </div>
-                                    <div class="slide five">
-                                        <img src="images/reviewslider/star.png" alt="">
-                                        <p>"Great customer service. The process of purchasing was quick and painless, took  about a week from placing my order to having the container dropping off. Delivery driver was politeand set the container down exactly where i wanted it. hey sent me the photos of the container prior and it arrived in great shape (for a used container). Highly recommnded."</p>
-                                        <h3>ERIC B.</h3>
-                                         <p class="from_google">Google Reviews</p>
-                                    </div>
-                                    <div class="slide six">
-                                        <img src="images/reviewslider/star.png" alt="">
-                                        <p>
-                                            "great service, bought tow containers at different times and both were delivered right when they said they would. then one trip containers are fantastic! just link brand new inside and out! great company to work with!"
-                                        </p>
-                                        <h3>KENNETH H.</h3>
-                                        <p class="from_google">Google Reviews</p>
-                                    </div>
+            <div class="slider_container">
+                <div>
+                    <div class="single_product_slider">
+                        <div style="display: none;" class="slidernav previous js-single-product-slider-nav">
+                            <img src="../images/arrowleft.svg" alt="">
+                        </div>
+                        <div class="slides_wrap">
+                            <div class="slides js-single-product-slides">
+                                <div class="slide one">
+                                    <img src="../images/500x659/products/314/8630/40HC_New_picture1__75335.1622498051.jpg?c=2" alt="">
+                                </div>
+                                <div class="slide two">
+                                    <img src="../images/projuctslide2/slideproduct2.jpg" alt="">
+                                </div> 
+                                <div class="slide three">
+                                    <img src="../images/projuctslide2/slideproduct3.png" alt="">
+                                </div>
+                                <div class="slide four">
+                                    <img src="../images/projuctslide2/slideproduct4.png" alt="">
+                                </div>
+                                <div class="slide five">
+                                    <img src="../images/projuctslide2/slideproduct5.jpg" alt="">
+                                </div>
+                                <div class="slide six">
+                                    <img src="../images/projuctslide2/slideproduct6.jpg" alt="">
+                                </div>
+                                <div class="slide seven">
+                                    <img src="../images/projuctslide2/slideproduct7.jpg" alt="">
+                                </div>
+                                <div class="slide eight">
+                                    <img src="../images/projuctslide2/slideproduct8.jpg" alt="">
+                                </div>
+                                <div class="slide nine">
+                                    <img src="../images/projuctslide2/slideproduct9.jpg" alt="">
+                                </div>
+                                <div class="slide ten">
+                                    <img src="../images/projuctslide2/slideproduct10.jpg" alt="">
                                 </div>
                             </div>
-                        <div class=" js-review-nav nav right"><img src="images/arrowright.svg" alt=""></div>
-                        <div class="dot_nav">
-                            <div class="dot js-review-dot-nav black"></div>
-                            <div class="dot js-review-dot-nav"></div>
-                            <div class="dot js-review-dot-nav"></div>
-                            <div class="dot js-review-dot-nav"></div>
-                            <div class="dot js-review-dot-nav"></div>
+                        </div>
+                        <div class="navdonts">
+                            <div  class="dont js-single-product-slider-dontsnav black"></div>
+                            <div class="dont js-single-product-slider-dontsnav"></div>
+                            <div class="dont js-single-product-slider-dontsnav"></div>
+                        </div>
+                        <div class="slidernav next js-single-product-slider-nav">
+                            <img src="../images/arrowright.svg" alt="">
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>    
+        <section class="description_table_container">
+            <div>
+                <div class="title">
+                    <h2>WARRANTY & REFUND POLICY</h2>
+                </div>
+                <div class="content">
+                    <p><span>Midstate Containers guarantee all units are wind and weather tight and warrants its products to be free from defects for 1 year from the date of purchase. </span></p>
+                    <p><span>Midstate Containers will under warranty obligation, repair or replace defective parts/products at their discretion. Definition of Defect: functionality of cargo doors, cargo door seals, and roll door issues. </span></p>
+                    <p><span>This warranty does not cover cosmetic defects such as; chipped paint, rust buildup, damage to structure of container due to handling, loading or off loading, damage due to harsh weather conditions and normal wear and tear. This warranty will also exclude custom interior and exterior paint. </span></p>
+                    <p><span>For more information on out of warranty repair, contact Midstate Containers at (805)-925-4422 or info@midstatecontainers.com. No other warranties are implied and there are no warranties extended. </span></p>
+                    <p>All deposits are non-refundable.</p>
+                    <p><span>Refunds are considered on a case by case basis, no refunds are offered for any modifications&nbsp;or costs incurred due to transportation or handling.&nbsp;</span></p>
                 </div>
             </div>
         </section>
@@ -356,18 +321,18 @@
                 <h5 class="footer-info-heading">Navigate</h5>
                 <ul class="footer-info-list">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="../index.html">Home</a>
                     </li>
                     <li>
-                        <a href="shipping&return.html">Shipping &amp; Returns</a>
+                        <a href="../shipping&return.html">Shipping &amp; Returns</a>
                     </li>
                     
                     <li>
-                        <a href="about.html">About US</a>
+                        <a href="../about.html">About US</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact Us</a>
-                    </li>    
+                        <a href="../contact.html">Contact Us</a>
+                    </li>      
                 </ul>
             </article>
     
@@ -439,23 +404,20 @@
                 </div>
                 
                 <div class="footer_payment_icons">
-                    <img src="images/footer/american-express.svg" alt="">
-                    <img src="images/footer/discover.svg" alt="">
-                    <img src="images/footer/mastercard.svg" alt="">
-                    <img src="images/footer/paypal.svg" alt="">
-                    <img src="images/footer/visa.svg" alt="">
+                    <img src="../images/footer/american-express.svg" alt="">
+                    <img src="../images/footer/discover.svg" alt="">
+                    <img src="../images/footer/mastercard.svg" alt="">
+                    <img src="../images/footer/paypal.svg" alt="">
+                    <img src="../images/footer/visa.svg" alt="">
                 </div>
             </article>
         </section>
         <section class="note_container">
             <div class="notetext"> <p>One Trippers - One click purchase available for any shipping container in North America. Call us anytime for assistance.  ✆  202 742 6292</p></div>
         </section>
-        <script src="main.js"></script>
-        <script src="js/slider.js"></script>
-        <script src="js/cart.js"></script>
-        <script src="js/product.js"></script>
-        <script src="js/reviewslider.js"></script>
-        <script src="cartpopupplugin/cartpopup.js"></script>
+        <script src="../main.js"></script>
+        <script src="../js/manulslider.js"></script>
+        <script src="../cartpopupplugin/cartpopup.js"></script>
     </footer>
 </body>
-</html>
+</html> 

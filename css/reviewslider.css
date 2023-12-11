@@ -1,0 +1,148 @@
+.testimonial_container{
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    padding: 30px 0 100px 0;
+}
+.testimonial_container .wrap{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.testimonial_container .wrap .title{
+    width: 100%;
+    text-align: center;
+}
+.testimonial_container .wrap .title h2{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: .25px;
+    line-height: 33.6px;
+    color: rgb(68, 68, 68);
+}
+.testimonial_container .wrap .review_slider_container{
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.review_slider_container .review_slider{
+    position: relative;
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+}
+.review_slider .slides_wrap{
+    width: 50%;
+    height: 90%;
+    margin: 0 auto;
+    overflow: inherit;
+}
+ .review_slider .slides_wrap .slides{
+    position: relative;
+    left: 0%;
+    display: flex;
+    width: 600%;
+    height: 100%;
+}
+ .review_slider .slides_wrap .slides .slide{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+ .review_slider .slides_wrap .slides .slide img{
+    width: auto;
+    height: 25%;
+}
+ .review_slider .slides_wrap .slides .slide p{
+    font-family: 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", Arial, "Noto Sans";
+    font-weight: rgb(33, 37, 41);
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 2%;
+    padding: .5px;
+}
+ .review_slider .slides_wrap .slides .slide h3{
+    font-family: 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", Arial, "Noto Sans";
+    font-weight: rgb(33, 37, 41);
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 6%;
+}
+ .review_slider .slides_wrap .slides .slide .from_google{
+    font-size: 12px;
+    margin-top: 2%;
+}
+ .review_slider .nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    width: 5%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 10;
+ }
+ .review_slider .nav img{
+    width: 30%;
+    height: 50%;
+    margin-top: 50%;
+    object-fit: contain;
+ }
+ .review_slider .nav.left{
+    left: 0;
+ }
+ .review_slider .nav.right{
+    right: 0;
+ }
+ .review_slider .dot_nav{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    grid-gap: 1%;
+    z-index: 11;
+ }
+ .review_slider .dot_nav .dot{
+    width: 15px;
+    height: 15px;
+    border: 1px solid gray;
+    border-radius: 50%;
+ }
+ .review_slider .dot_nav .dot.black{
+    background-color: gray;
+ }
+
+ /* responsive design for 801 screem view point */
+@media (max-width: 801px) {
+    .review_slider .slides_wrap{
+        width: 70%;
+        height: 90%;
+        margin: 0 auto;
+        overflow: inherit;
+    }
+    .review_slider .nav img{
+        width: 60%;
+        margin-top: 300%;
+     }
+
+     .review_slider .slides_wrap .slides .slide p{
+        font-size: 18px;
+     }
+     .review_slider .slides_wrap .slides .slide h3{
+        font-size: 18px;
+     }
+     .review_slider .slides_wrap .slides .slide .from_google{
+        font-size: 10px;
+     }
+   
+}
