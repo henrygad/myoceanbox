@@ -66,6 +66,9 @@
     .contact_us_container .content{
         width: 90%;
     }
+    .contact_us_container .form_container{
+        min-height: 400px;
+    }
 
    
 }

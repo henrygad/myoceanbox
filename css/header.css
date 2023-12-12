@@ -195,8 +195,8 @@ header .logo_container img{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 35px;
-        width: 45px;
+        height: 30px;
+        width: 40px;
         border: 1px solid rgb(210, 210, 210);
         border-radius: 4px;
         background-color: rgba(0, 0, 0, 0);
@@ -231,12 +231,13 @@ header .logo_container img{
     
     header .logo_container{
         height: auto;
-        min-height: 60px;
+        min-height: 65px;
         padding-top: 5px;
     }
     header .logo_container img{
         width: 100px;
         height: 50px;
+        padding-top: 4px;
         color: rgb(9, 7, 7);
     }
 
@@ -274,6 +275,7 @@ header .logo_container img{
     .second_nav .list_container{
         flex-direction: column;
         align-items: start;
+        grid-gap: 15px;
         width: 100%;
         height: 40%;
         margin: 0 auto;

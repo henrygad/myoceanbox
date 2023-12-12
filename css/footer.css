@@ -178,5 +178,18 @@ footer .note_container p{
      margin-top: 40px;
 }
 
+.footer_container_info .group a,
+.footer_container_info .group .text_design{
+    font-size: 12px;
+}
+.footer_container_info .group .text_design_strong{
+    font-size: 12px;
+}
+
+footer .note_container p{
+    font-size: 12px;
+}
+
+
    
 }

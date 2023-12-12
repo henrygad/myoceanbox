@@ -131,7 +131,7 @@ const reviewslides_el = document.querySelector('.js-review-slides')
 
         const currect= RScurrectposition()
         RSchangeposition(currect)
-        }, 5000);
+        }, 10000);
 
         /* pause auto slide */
         reviewslides_el.parentElement.addEventListener('mouseover', e => {

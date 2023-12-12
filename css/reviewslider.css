@@ -34,7 +34,7 @@
     overflow: hidden;
 }
 .review_slider .slides_wrap{
-    width: 50%;
+    width: 100%;
     height: 90%;
     margin: 0 auto;
     overflow: inherit;
@@ -61,8 +61,10 @@
     line-height: 25px;
     font-size: 20px;
     font-weight: 400;
+    margin: 0 auto;
     margin-top: 2%;
     padding: .5px;
+    width: 50%;
 }
  .review_slider .slides_wrap .slides .slide h3{
     font-family: 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", Arial, "Noto Sans";
@@ -78,20 +80,19 @@
 }
  .review_slider .nav{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
     display: flex;
     justify-content: center;
-    width: 5%;
-    height: 100%;
-    cursor: pointer;
+    align-items: center;
+    width: 10%;
+    height: 80%;
     z-index: 10;
  }
  .review_slider .nav img{
-    width: 30%;
+    width: 20%;
     height: 50%;
-    margin-top: 50%;
     object-fit: contain;
+    cursor: pointer;
  }
  .review_slider .nav.left{
     left: 0;
@@ -124,25 +125,37 @@
 
  /* responsive design for 801 screem view point */
 @media (max-width: 801px) {
-    .review_slider .slides_wrap{
-        width: 70%;
-        height: 90%;
-        margin: 0 auto;
-        overflow: inherit;
-    }
-    .review_slider .nav img{
-        width: 60%;
-        margin-top: 300%;
-     }
-
+   .review_slider .nav{
+      height: 70%;
+   }
+   .review_slider .nav img{
+     width: 30%;
+   
+   }
+   .review_slider .dot_nav .dot{
+      width: 10px;
+      height: 10px;
+   }
      .review_slider .slides_wrap .slides .slide p{
-        font-size: 18px;
+        font-size: 16px;
+        width: 80%;
      }
      .review_slider .slides_wrap .slides .slide h3{
-        font-size: 18px;
+        font-size: 16px;
      }
      .review_slider .slides_wrap .slides .slide .from_google{
         font-size: 10px;
      }
+     .testimonial_container .wrap .review_slider_container{
+      height: 550px;
+  }
    
 }
+
+ /* responsive design for 801 screem view point */
+ @media (max-width: 401px) {
+   .testimonial_container .wrap .review_slider_container{
+      height: 600px;
+  }
+
+ }
