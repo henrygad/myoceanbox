@@ -211,10 +211,10 @@
             <div class="title"><h1 class="page-heading">Contact Us</h1></div>
             <div class="content">
                 <address>
-                    <span style="font-size: medium;"><strong>Call or Text us at&nbsp; <span style="color: #0000ff;">202 742 6292 (General Inquiry or Big Project)</span></strong></span>
+                    <span style="font-size: medium;"><strong>Call or Text us at&nbsp; <span style="color: #0000ff;"> +1 202 742 6292 (General Inquiry or Big Project)</span></strong></span>
                 </address>
                 <address>
-                    <span style="font-size: medium;">Email: <span style="color: #0000ff;">sales.admin@myoceanbox.com</span></span>
+                    <span style="font-size: medium;">Email: <span style="color: #0000ff;">contact@myoceanbox.com</span></span>
                 </address>
                 <address>
                     <span style="font-size: medium;"><span style="color: #0000ff;"><span style="color: #000000;">Website</span>: www.</span><span style="color: #0000ff;">myoceanbox.com</span></span>
@@ -233,7 +233,7 @@
                 </address>
         
                 <div class="form_container">
-                    <form class="contact_form" action="/submit" method="post">
+                    <form class="contact_form" id="js-contact-form">
 
                         <div class="form_grid">
                             <div class="form_f_nm">
@@ -244,6 +244,10 @@
                             <div class="form_phn">
                                 <label for="phone">Phone Number</label>
                                 <input type="text" id="phone" name="phone">
+                                <p id="invalidephone" style="
+                                 display: none;
+                                 font-size: 12px;
+                                color: red;">invalide phone no.</p>
                             </div>
     
                             <div class="form_em">
@@ -251,6 +255,10 @@
                                     <small>Required</small>
                                 </label>
                                 <input type="email" id="email" name="email">
+                                <p id="invalideemail" style="
+                                display: none;
+                                font-size: 12px;
+                                color: red;">invalide email</p>
                             </div>
                                    
                             <div class="form_cp_nm">
@@ -263,7 +271,7 @@
                                     Comments/Questions
                                     <small>Required</small>
                                 </label>
-                                <textarea rows="5" cols="50" ></textarea>
+                                <textarea rows="5" id="message" ></textarea>
                             </div>
 
                         </div>
@@ -379,6 +387,9 @@
         </section>
         <script type="module" src="main.js"></script>
         <script src="cartpopupplugin/cartpopup.js"></script>
+        <script src="js/contactform.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </footer>
 </body>
 </html>

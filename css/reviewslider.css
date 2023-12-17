@@ -130,7 +130,9 @@
    }
    .review_slider .nav img{
      width: 30%;
-   
+   }
+   .review_slider .dot_nav{
+     grid-gap: 13px;
    }
    .review_slider .dot_nav .dot{
       width: 10px;
